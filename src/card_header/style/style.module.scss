@@ -1,0 +1,39 @@
+@use "utils.module.scss" as *;
+//@use "global" as *;
+
+$color_type_0: rgb(0, 0, 0);
+
+$font_type_0: 400 30px/1.16 "Droid Sans", Helvetica, Arial, serif;
+
+.flex_row {
+  @include v-center-content;
+  column-gap: 10px;
+  position: relative;
+}
+.flex_row__cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 auto;
+}
+.image {
+  width: 38px;
+  height: auto;
+  aspect-ratio: 1.52;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  margin: 13px 0px 12px;
+}
+.flex_row__cell1 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 auto;
+}
+.title {
+  @include v-center-content;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  position: relative;
+  flex-grow: 1;
+  min-height: 50px;
+}
